@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>K-POP Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logokpop.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>This is<br><span>KPOP</span></h2>
+                <p> Hi ! What is kpop ? How it work ? what is the environment ? Who is the leader ? How art as been introduced in video clip ? <br> Lets watch our Youtube video to learn all that !
+                </p>
+                <a href="https://youtu.be/S_aCWZmKmO8"><Button id="button2"> Watch our video</Button></a>
+            </div>
+            <div class="imgBox">
+                <img src="kpop.jpg" class="kpop">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li>
+                <a href="3Dposter.jpg"><img src="3Dposter.jpg" onclick="ImgSliger('3Dposter.png');changeBgColor('#0062be')"></li>
+            </a>
+            <li>
+                <a href="https://youtu.be/S_aCWZmKmO8"><img src="miniatyre.png" onclick="ImgSliger('miniatyre.png');changeBgColor('#e60c2c')"></li>
+            </a>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.kpop').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.backround = color;
+        }
+    </script>
+</body>
+
+</html>
